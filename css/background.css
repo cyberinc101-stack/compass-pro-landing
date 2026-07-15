@@ -1,0 +1,40 @@
+/* ==========================================================================
+   background.css
+   Site-wide background layer. Sits BELOW every section (z-index: -1) on a
+   fixed full-viewport <div id="site-bg">. A deep-space navy base with a
+   faint starfield texture (from the supplied night-sky image, tiled small
+   and dimmed) plus two soft radial glows in the brand cyan and brass, so
+   the instrument-panel atmosphere is present even where a section is
+   otherwise transparent.
+   ========================================================================== */
+
+#site-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-color: var(--void);
+  background-image:
+    radial-gradient(ellipse 60% 45% at 18% 8%, rgba(79, 216, 232, 0.10) 0%, transparent 60%),
+    radial-gradient(ellipse 55% 40% at 88% 28%, rgba(217, 168, 87, 0.08) 0%, transparent 60%),
+    url("../images/starfield-bg.jpg");
+  background-repeat: no-repeat, no-repeat, repeat;
+  background-size: cover, cover, 340px 190px;
+  background-position: center, center, center;
+  background-blend-mode: normal, normal, screen;
+  opacity: 1;
+}
+
+#site-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--void);
+  opacity: 0.78;
+}
+
+@media (max-width: 600px) {
+  #site-bg {
+    background-size: cover, cover, 260px 145px;
+  }
+}

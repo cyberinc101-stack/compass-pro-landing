@@ -1,0 +1,51 @@
+:root {
+  /* ── Void — backgrounds, darkest → raised surfaces ── */
+  --void:        #060912;
+  --void-deep:   #03050a;
+  --void-raised: #0d1424;
+  --void-card:   #111a30;
+  --hairline:    rgba(143, 168, 209, 0.14);
+
+  /* ── Ink — text ── */
+  --ink-100: #f4f7fb;
+  --ink-300: #c4cee0;
+  --ink-400: #8b9ab3;
+  --ink-600: #5d6c87;
+
+  /* ── Signature accents ── */
+  --cyan:       #4fd8e8;
+  --cyan-dim:   rgba(79, 216, 232, 0.16);
+  --cyan-glow:  rgba(79, 216, 232, 0.45);
+  --brass:      #d9a857;
+  --brass-dim:  rgba(217, 168, 87, 0.14);
+  --brass-glow: rgba(217, 168, 87, 0.4);
+  --signal-red: #e8554f;
+
+  /* ── Typography ── */
+  --font-display: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+  --font-sans:    'Inter', system-ui, sans-serif;
+  --font-mono:    'JetBrains Mono', 'IBM Plex Mono', monospace;
+
+  /* ── Spacing ── */
+  --space-xs:  0.5rem;
+  --space-sm:  1rem;
+  --space-md:  1.5rem;
+  --space-lg:  2.5rem;
+  --space-xl:  4rem;
+  --space-2xl: 6.5rem;
+
+  /* ── Radius ── */
+  --r-sm: 10px;
+  --r-md: 16px;
+  --r-lg: 26px;
+  --r-pill: 999px;
+
+  /* ── Shadows / glows ── */
+  --shadow-md: 0 10px 34px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 26px 70px rgba(0, 0, 0, 0.55);
+  --glow-cyan: 0 0 32px rgba(79, 216, 232, 0.25);
+  --glow-brass: 0 0 32px rgba(217, 168, 87, 0.22);
+
+  /* ── Layout ── */
+  --max-w: 1180px;
+}
